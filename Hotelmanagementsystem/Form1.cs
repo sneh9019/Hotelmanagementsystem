@@ -68,9 +68,9 @@ namespace Hotelmanagementsystem
         {
             query = "select username,pass from employee where username='" + txtUsername.Text + "'  and pass='"+txtPassword.Text+"'  ";
             DataSet ds = fn.getData(query);
-            //if (ds.Tables[0].Rows.Count !=0)
+       
             
-            if (txtUsername.Text== "sneh" && txtPassword.Text=="abc")
+           if (ds.Tables[0].Rows.Count !=0) 
             {
                 labelError.Visible = false;
                Dashboard dash=new Dashboard();
